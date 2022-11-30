@@ -1,5 +1,7 @@
 const UserController = require("./../controllers/userController");
 
-const userController = new UserController("John Doe");
+console.log(UserController.name);
 
-console.log(userController.tmpName);
+UserController.name = "Richard Roe";
+
+console.log(UserController.name);
